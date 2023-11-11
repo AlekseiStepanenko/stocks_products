@@ -6,13 +6,13 @@ from logistic.models import Product, StockProduct, Stock
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        feilds = ['id', 'title', 'description']
+        fields = ['id', 'title', 'description']
 
 
 class ProductPositionSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockProduct
-        feilds = ['stock', 'product', 'quantity', 'price']
+        fields = ['product', 'quantity', 'price']
 
 
 class StockSerializer(serializers.ModelSerializer):

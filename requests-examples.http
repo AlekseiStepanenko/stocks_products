@@ -8,7 +8,7 @@ Content-Type: application/json
 
 {
   "title": "Помидор",
-  "description": "Лучшие помидоры на рынке"
+  "description": "Черные помидоры"
 }
 
 ###
@@ -46,7 +46,7 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru3",
+  "address": "стрит 3",
   "positions": [
     {
       "product": 2,
@@ -54,7 +54,7 @@ Content-Type: application/json
       "price": 120.50
     },
     {
-      "product": 3,
+      "product": 5,
       "quantity": 100,
       "price": 180
     }
