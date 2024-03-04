@@ -56,3 +56,11 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_VALUE }}
           DEBUG: ${{ secrets.DEBUG_MODE }}
           PASSWORD: ${{ secrets.PASSWORD }}
+
+      - name: Деплой (развертывание)
+        uses: appleboy/ssh-action@main
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: expect /home/user/stocks_products/deploy.exp
