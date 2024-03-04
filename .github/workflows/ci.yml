@@ -56,5 +56,3 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_VALUE }}
           DEBUG: ${{ secrets.DEBUG_MODE }}
           PASSWORD: ${{ secrets.PASSWORD }}
-
-
