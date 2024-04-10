@@ -24,7 +24,7 @@ PATCH {{baseUrl}}/products/1/
 Content-Type: application/json
 
 {
-  "description": "Самые сочные и ароматные помидоры"
+  "description": "Самые сочные и ароматные помидорки"
 }
 
 ###
